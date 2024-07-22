@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist\bootstrap-5.3.2-dist\css\bootstrap.min.css">
+    <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="beingarstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Barriecito&family=Beau+Rivage&family=Black+And+White+Picture&family=Butcherman&family=Charmonman:wght@400;700&family=Condiment&family=Eater&family=Fascinate&family=Fascinate+Inline&family=Frijole&family=Fuggles&family=Hanalei+Fill&family=Hurricane&family=Kavoon&family=Kranky&family=Kumar+One&family=Kumar+One+Outline&family=Londrina+Shadow&family=Miltonian&family=Nosifer&family=Pixelify+Sans:wght@400..700&family=Poller+One&family=Protest+Strike&family=Rampart+One&family=Rubik+Doodle+Shadow&family=Ruslan+Display&family=Saira+Stencil+One&family=Smooch&family=Srisakdi:wght@400;700&family=Vast+Shadow&family=Wendy+One&family=Zen+Tokyo+Zoo&display=swap"
+        rel="stylesheet">
+    <title>Folio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar d-flex justify-content-around gap-2">
+            <a href="#" style="text-decoration: none;">Accueil</a>
+            <a href="#" style="text-decoration: none;">Service</a>
+            <a href="#" style="text-decoration: none;">Contact</a>
+            <a href="#" style="text-decoration: none;">Sign up</a>
+        </div>
+        <div class="icon"><i class="fa fa-bars"></i></div>
+    </div>
+    <div class="milieu">
+        <div class="contient1">
+            <div class="img-contain">
+                <img src="abel.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>NGARTOUDJINA Abel, Ingénieur à l'ENSGEP 😎.</p>
+            </div>
+        </div>
+        <div class="contient1">
+            <div class="img-contain">
+                <img src="issem1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>NGARTOUDJINA Israel, dealer de IPhone & Samsung ✌.</p>
+            </div>
+        </div>
+        <div class="contient1">
+            <div class="img-contain">
+                <img src="isem2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>NGARTOUDJINA Ala-issem, constructeur des engins de transport 🤩.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const icone = document.querySelector('.icon');
+        const navbar = document.querySelector('.navbar');
+        //let verify = navbar.classList.contains('active');
+
+        function verifie() {
+            if (navbar.classList.contains('active')) {
+                icone.style.color = 'white';
+            } else {
+                icone.style.color = 'black';
+            }
+        }
+        //const icone2 = '<i class="fa-solid fa-xmark action"></i>';
+        //const icone4 = '<i class="fa fa-bars"></i>';
+        icone.addEventListener('click', () => {
+            //icone.outerHTML = icone2;
+            navbar.classList.toggle('active');
+            verifie();
+            //const icone3 = document.querySelector('.action');
+        })
+    </script>
+</body>
+
+</html>
